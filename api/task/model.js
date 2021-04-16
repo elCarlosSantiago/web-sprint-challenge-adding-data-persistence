@@ -1,7 +1,7 @@
 const db = require('../../data/dbConfig.js');
 
 const getTasks = async () => {
-  return Promise.resolve('getTasks wired');
+  return db('tasks');
 };
 
 const addTask = async (task) => {

@@ -1,14 +1,12 @@
 const db = require('../../data/dbConfig.js');
 
 const getResources = async () => {
-  return Promise.resolve('getResources wired!')
-}
+  return db('resources');
+};
 
-const addResources = async () => {
-  return Promise.resolve('addResources wired!')
-}
+const addResources = async () => {};
 
 module.exports = {
   getResources,
-  addResources
-}
+  addResources,
+};
