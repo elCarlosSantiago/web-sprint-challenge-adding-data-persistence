@@ -6,7 +6,7 @@ router.get('/', async (req, res, next) => {
     const taskCollection = await Tasks.getTasks();
     res.json(taskCollection);
   } catch (err) {
-    next();
+    next(err);
   }
 });
 
@@ -16,7 +16,7 @@ router.post('/', async (req, res, next) => {
     const newTask = await Tasks.addTask(task);
     res.json(newTask);
   } catch (err) {
-    next();
+    next(err);
   }
 });
 
