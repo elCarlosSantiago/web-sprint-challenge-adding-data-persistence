@@ -7,7 +7,7 @@ exports.seed = async function (knex) {
     },
     {
       project_name: 'Build a Back End',
-      project_description: 'A _probably_ incorrect overview of a backend project.',
+      project_description: 'A short overview of a backend project.',
       project_completed: false,
     },
   ]);
