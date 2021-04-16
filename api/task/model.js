@@ -11,11 +11,18 @@ const getTasks = async () => {
       task_completed: task.task_completed == 1 ? true : false,
     };
   });
-  return formattedTask
+  return formattedTask;
 };
 
 const addTask = async (task) => {
-  return Promise.resolve('add task wired!');
+  const [task_id] = await db('tasks').insert(task);
+  const newTask = await db('tasks').where('task_id', task_id).first();
+
+  const formattedTask = {
+    ...newTask,
+    task_completed: newTask.task_completed == 1 ? true : false,
+  };
+  return formattedTask;
 };
 
 module.exports = {

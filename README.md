@@ -65,7 +65,7 @@ a
 
   - Example of response body: `[{"resource_id":1,"resource_name":"foo","resource_description":null}]`
 
-- [ ] `[POST] /api/projects`
+- [X] `[POST] /api/projects`
 
   - Even though `project_completed` is stored as an integer, the API uses booleans when interacting with the client
   - Example of response body: `{"project_id":1,"project_name":"bar","project_description":null,"project_completed":false}`
@@ -75,7 +75,7 @@ a
   - Even though `project_completed` is stored as an integer, the API uses booleans when interacting with the client
   - Example of response body: `[{"project_id":1,"project_name":"bar","project_description":null,"project_completed":false}]`
 
-- [ ] `[POST] /api/tasks`
+- [X] `[POST] /api/tasks`
 
   - Even though `task_completed` is stored as an integer, the API uses booleans when interacting with the client
   - Example of response body: `{"task_id":1,"task_description":"baz","task_notes":null,"task_completed":false,"project_id:1}`
