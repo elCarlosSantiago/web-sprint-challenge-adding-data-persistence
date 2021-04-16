@@ -56,8 +56,8 @@ Build the migration(s) in Knex inside the `data/migrations` folder using appropr
 ### Required Endpoints
 
 Build an API inside the `api` folder with endpoints for:
-
-- [ ] `[POST] /api/resources`
+a
+- [X] `[POST] /api/resources`
 
   - Example of response body: `{"resource_id":1,"resource_name":"foo","resource_description":null}`
 
